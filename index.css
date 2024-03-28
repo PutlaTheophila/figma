@@ -1,0 +1,148 @@
+.hello-guys,
+.webpage,
+.welcome-to-putla {
+  margin: 0;
+}
+.hello-guys-welcome-container {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 130%;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+.frame-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: #11778d;
+  width: 100%;
+  height: 100%;
+}
+.frame-item {
+  position: absolute;
+  top: 25px;
+  left: 135px;
+  border-radius: 50%;
+  width: 157px;
+  height: 159px;
+  object-fit: cover;
+  z-index: 1;
+}
+.rectangle-parent {
+  width: 100%;
+  height: 570px;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: -18px;
+  left: 0;
+}
+.login {
+  width: 87px;
+  position: relative;
+  font-size: 36px;
+  line-height: 47px;
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  min-width: 87px;
+}
+.login-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 11px 20px 22px;
+  background-color: #27cd0c;
+  align-self: stretch;
+  border-radius: var(--br-11xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+.login-wrapper:hover {
+  background-color: #0db300;
+}
+.new-user,
+.register {
+  margin: 0;
+}
+.new-user-register-container {
+  height: 71px;
+  flex: 1;
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+  z-index: 1;
+}
+.new-user-register-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 28px 0 29px;
+}
+.frame-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 13px;
+}
+.frame-wrapper,
+.hello-guys-welcome-to-putla-th-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 19px;
+  font-size: 16px;
+}
+.hello-guys-welcome-to-putla-th-parent {
+  flex: 1;
+  flex-direction: column;
+  padding: 221px 52px 27px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 47px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.hacker-5472x3648-1651-1 {
+  height: 2731px;
+  width: 4096px;
+  position: absolute;
+  margin: 0 !important;
+  right: -1852px;
+  bottom: -948px;
+  z-index: 1;
+}
+.frame-parent {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 374px 0 0;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
