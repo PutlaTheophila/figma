@@ -1,3 +1,45 @@
+.new-user,
+.register {
+  margin: 0;
+}
+.new-user-register-container {
+  height: 71px;
+  width: 229px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -12px;
+  left: calc(50% - 114.5px);
+  line-height: 130%;
+  font-weight: 300;
+  display: inline-block;
+}
+.frame-child {
+  width: 357px;
+  height: 544px;
+  position: relative;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-teal);
+  display: none;
+  max-width: 100%;
+}
+.frame-item {
+  height: 159px;
+  width: 157px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+.ellipse-wrapper {
+  align-self: stretch;
+  height: 159px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 21px 0 var(--padding-xl);
+  box-sizing: border-box;
+}
 .hello-guys,
 .webpage,
 .welcome-to-putla {
@@ -11,35 +53,7 @@
   line-height: 130%;
   font-weight: 700;
   font-family: inherit;
-  z-index: 1;
-}
-.frame-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-11xl);
-  background-color: #11778d;
-  width: 100%;
-  height: 100%;
-}
-.frame-item {
-  position: absolute;
-  top: 25px;
-  left: 135px;
-  border-radius: 50%;
-  width: 157px;
-  height: 159px;
-  object-fit: cover;
-  z-index: 1;
-}
-.rectangle-parent {
-  width: 100%;
-  height: 570px;
-  position: absolute;
-  margin: 0 !important;
-  right: 0;
-  bottom: -18px;
-  left: 0;
+  z-index: 2;
 }
 .login {
   width: 87px;
@@ -52,97 +66,77 @@
   text-align: center;
   min-width: 87px;
 }
-.login-wrapper {
+.registration-message,
+.registration-message-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.registration-message {
   cursor: pointer;
   border: 0;
-  padding: 11px 20px 22px;
+  padding: 11px var(--padding-xl) 22px;
   background-color: #27cd0c;
-  align-self: stretch;
+  flex: 1;
   border-radius: var(--br-11xl);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   justify-content: center;
-  z-index: 1;
+  z-index: 2;
 }
-.login-wrapper:hover {
-  background-color: #0db300;
-}
-.new-user,
-.register {
-  margin: 0;
-}
-.new-user-register-container {
-  height: 71px;
-  flex: 1;
-  position: relative;
-  line-height: 130%;
-  font-weight: 300;
-  display: inline-block;
-  z-index: 1;
-}
-.new-user-register-wrapper {
+.registration-message-wrapper {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 28px 0 29px;
-}
-.frame-group {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   justify-content: flex-start;
-  gap: 13px;
-}
-.frame-wrapper,
-.hello-guys-welcome-to-putla-th-parent {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.frame-wrapper {
-  align-self: stretch;
-  flex-direction: row;
-  padding: 0 19px;
-  font-size: 16px;
+  padding: 0 var(--padding-xl) 0 var(--padding-lg);
 }
 .hello-guys-welcome-to-putla-th-parent {
-  flex: 1;
+  align-self: stretch;
   flex-direction: column;
-  padding: 221px 52px 27px;
-  box-sizing: border-box;
-  position: relative;
-  gap: 47px;
-  max-width: 100%;
+  gap: 12px;
   text-align: center;
   font-size: 24px;
   color: var(--color-white);
   font-family: var(--font-inter);
 }
-.hacker-5472x3648-1651-1 {
-  height: 2731px;
-  width: 4096px;
-  position: absolute;
-  margin: 0 !important;
-  right: -1852px;
-  bottom: -948px;
+.frame-parent,
+.hello-guys-welcome-to-putla-th-parent,
+.new-user-register-parent,
+.rectangle-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle-parent {
+  width: 357px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-teal);
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: 93px 15px 71px var(--padding-lg);
+  box-sizing: border-box;
+  gap: 36px;
   z-index: 1;
+}
+.frame-parent,
+.new-user-register-parent {
+  position: relative;
+  flex-direction: row;
+}
+.new-user-register-parent {
+  flex: 1;
+  overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: -12px;
+  padding-bottom: 12px;
 }
 .frame-parent {
   width: 100%;
-  position: relative;
   background-color: var(--color-white);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 374px 0 0;
+  padding: 256px 3px 0 0;
   box-sizing: border-box;
   letter-spacing: normal;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
 }
